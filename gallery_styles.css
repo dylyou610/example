@@ -1,0 +1,150 @@
+/*Header*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #ff00b3bf, #0F1023),
+    url('./background/noen.jpg');
+    font-family: 'Segoe UI', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: 75px;
+    color: white;
+    padding: 5%;
+    letter-spacing: 35px;
+    line-height: 400px;
+}
+nav{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+span{
+    color: #FF0092;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #FF0092;
+    transition: 1.2s;
+}
+/*hover effect*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/*hover effect*/
+
+/*Header*/
+
+
+
+/*Gallery*/
+h4{
+    color: white;
+    padding: 10%;
+    font-style: italic;
+    text-decoration: underline;
+}
+section img{
+    width: 25%;
+    height: 25%;
+    padding: 12px;
+}
+.gallery img{
+    will-change: transform;
+    transition: transform 450ms;
+}
+.gallery img:hover{
+    transition: transform 125ms;
+    transform: translateY(-20px);
+}
+
+/*Gallery*/
+
+
+
+
+/*footer*/
+footer{
+    background-image: linear-gradient(to bottom, #ff009000, #0F1023);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 20px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social img{
+    max-width: 70%;  
+    height: auto;  
+}
+.social img:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}  
+/*footer*/

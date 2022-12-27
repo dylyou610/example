@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #c5008abf, #0F1023),
+    url('./background/noen.jpg');
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #FF0092;
+    transition: .7s;
+}
+/*hover effect*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/*hover effect*/
+
+
+.row {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    transform: translateY(-50%);
+    letter-spacing: 2px;
+  }
+  h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+    letter-spacing: 8px;
+
+}  
+  .column {
+    flex: 50%;
+    color: white;
+    padding: 0px 15px;
+ }
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 300px;
+    width: 60% auto;
+    padding: 20px 35px;
+    background: #181937;
+    border-radius: 20px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card img{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    color: #FF0092;
+    width:20%;
+    height:auto;
+}
+.card h5{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+}
+.card p{
+    font-size: 13px;
+    color: #ffffff;
+    height:auto;
+}
+.pra p{
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+    line-height: auto;
+
+}
+.card .button{
+    background-color:#FF0092;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 7px 22px;
+    border-radius: 30px;
+    transition: .4s; 
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #FF0092;
+    cursor: pointer;
+}
+
+.pra img:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}  
+
+.pra a{
+    color: white;
+}
+
+.pra a:hover{
+    color: #FF0092;
+    transition: .7s;
+}
+
